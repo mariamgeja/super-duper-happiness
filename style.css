@@ -1,0 +1,179 @@
+@import url("animation.css");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth; 
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #121212; 
+  color: #ffffff;
+  font-family: sans-serif;  
+  overflow-x: hidden;        
+}
+
+
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: slategrey;
+  z-index: 1000;             
+  padding: 10px 20px;        
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+}
+
+.site-logo {
+  height: 50px;             
+  width: auto;
+  display: block;
+}
+
+.nav-menu {
+  display: flex;            
+  list-style: none;          
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li {
+  margin-left: 20px;
+}
+
+.nav-menu a {
+  text-decoration: none;     
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.nav-menu a.active {
+  color: #000000;            
+}
+
+.nav-menu a:hover {
+  color: #888888;            
+}
+
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.title h1 {
+  font-size: 50px;          
+  color: darkgoldenrod;      
+  text-transform: uppercase;  
+  letter-spacing: 3px;        
+  margin-bottom: 20px;
+  
+}
+.hero h2 {
+  font-size: 30px;
+  color: #bbbbbb;             
+  margin-bottom: 15px;
+  font-weight: 600;   
+  font-style: italic;
+
+}
+.hero p {
+  font-size: 25px;
+  color: #777777;             
+  font-style: italic;
+  font-weight: 500;         
+}
+
+main img {
+  border-radius: 50%;
+  border: 2px solid whitesmoke;
+  width: 100%;
+  max-width: 400px;          
+  height: auto;
+}
+
+
+#albums-section {
+  padding: 40px 20px;
+}
+
+#albums-section section {
+  display: flex;            
+  flex-direction: column;   
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+#albums-section section div {
+  display: flex;             
+  align-items: center;
+  justify-content: space-between;
+  background-color: darkred; 
+  padding: 30px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 700px;         
+  gap: 20px;
+}
+
+
+#albums-section section div:nth-child(even) {
+  flex-direction: row-reverse; 
+}
+
+#albums-section h3 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+                    
+  text-align: left;
+}
+
+
+#albums-section section div:nth-child(even) h3 {
+  text-align: right;
+}
+
+#albums-section img {
+  width: 100%;        
+  max-width: 300px;          
+  height: auto;       
+  display: block;
+  border-radius: 30px;       
+ border-style: double;
+ border:5px double darkgray;
+ }
+
+
+#spotify-footer {
+  background-color: #272424;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  text-align: center;
+}
+
+.footer-container a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #1DB954; 
+  color: white;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+.footer-container a:hover {
+  background-color: #1ed760;
+}
