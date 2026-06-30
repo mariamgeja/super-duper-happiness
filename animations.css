@@ -1,0 +1,20 @@
+@keyframes colorchange {
+  0% {
+    background-color: #444444;
+  }
+  50% {
+    background-color: #5b5b5b;
+  }
+  100% {
+    background-color: #999999;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

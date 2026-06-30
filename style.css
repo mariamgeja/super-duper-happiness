@@ -1,10 +1,7 @@
-@import url("animation.css");
+@import url("animations.css");
 
 * {
   box-sizing: border-box;
-}
-
-html {
   scroll-behavior: smooth; 
 }
 
@@ -12,10 +9,19 @@ body {
   margin: 0;
   padding: 0;
   background-color: #121212; 
-  color: #ffffff;
+  background-image: url("images/dope1.webp");
+
   font-family: sans-serif;  
-  overflow-x: hidden;        
+  overflow-x: hidden;  
+  background-repeat: no-repeat;                 
+  background-size: cover;                       
+  background-position: center;                  
+  background-attachment: fixed;   
+  background-blend-mode: hard-light;              
+ /*cursor: pointer;*/
+
 }
+
 
 
 header {
@@ -69,6 +75,7 @@ header {
 .hero {
   text-align: center;
   padding: 60px 20px;
+
 }
 
 .title h1 {
@@ -96,10 +103,13 @@ header {
 
 main img {
   border-radius: 50%;
-  border: 2px solid whitesmoke;
+  border: none;
   width: 100%;
-  max-width: 400px;          
+  max-width: 300px;          
   height: auto;
+  object-fit: cover;
+  animation: spin 2s linear infinite;
+  animation-direction: normal;
 }
 
 
@@ -128,6 +138,7 @@ main img {
 }
 
 
+
 #albums-section section div:nth-child(even) {
   flex-direction: row-reverse; 
 }
@@ -137,8 +148,13 @@ main img {
   margin-bottom: 15px;
                     
   text-align: left;
+  transition-delay: 0.3s;
+  transition-duration: 0.5s;
 }
-
+ #albums-section div:hover h3{
+  color: white;
+  
+ }
 
 #albums-section section div:nth-child(even) h3 {
   text-align: right;
@@ -157,7 +173,12 @@ main img {
 
 #spotify-footer {
   background-color: #272424;
-  padding: 40px 20px;
+  padding: 10px 20px;
+  animation:colorchange 3s infinite;
+  animation-direction: alternate;
+
+  animation-timing-function: linear;
+
 }
 
 .footer-container {
@@ -172,8 +193,13 @@ main img {
   padding: 12px 24px;
   border-radius: 25px;
   font-weight: bold;
+
+
 }
 
 .footer-container a:hover {
   background-color: #1ed760;
+
+  
+
 }
